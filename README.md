@@ -1,5 +1,6 @@
 # Garage_Door_Controller.
 Control and status a garage door from the Internet.
+
 This project uses a Particle Photon to allow a garage door to be opened and closed
 using an Android app running on a smartphone.  The app also displays the current status
 of the garage door -- open or closed.  The project uses our Wireless I/O Board for the Photon:
