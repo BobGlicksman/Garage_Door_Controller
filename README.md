@@ -29,7 +29,7 @@ The project is intended to be mounted in a garage.  The following considerations
 using an external WiFi antenna on the Photon was very helpful.
 2. If the garage is uninsulated, make sure that the ambient temperature remains within the
 operating range of the electronics year round.  The Photon's specified ambient temperature
-operating range is -4 to 60 degrees C (25 degrees to 140 degrees F).  The others electronic 
+operating range is -4 to 60 degrees C (25 degrees to 140 degrees F).  The other electronic 
 components have a similar temperature operating range.
 3. The electronics require a source of 5 volt regulated power; usually supplied by a USB
 "wall wart".  Make sure that you have AC power within a resonable distance of the electronics
