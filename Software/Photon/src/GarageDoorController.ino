@@ -1,14 +1,19 @@
 /* GarageDoorController:  open/close the garage door and report whether the garage door is open or closed.
     This program uses an HC_SR04 ultrasonic range sensor to determine if a garage door
     is open or closed.  It uses the Wireless I/O board to connect up the sensor, and
-    uses the relay to trigger a wireless garage door opener by putting
+    uses the relay on the Wireless I/O board to trigger a wireless garage door opener by putting
     the relay NO/COM contacts in parallal with the manual button.  If the door opener is powered
     by a Lithium battery (approx 3 volts), then the Wireless I/O board "motor power"
     can be used to power the opener so that no battery is needed.
     
-    version 1.1; 7/11/20; By: Bob Glicksman
-    
+    version 1.2; 7/17/20; By: Bob Glicksman
+    (c)2020 by Bob Glicksman, Jim Schrempp, Team Practical Projects; all rights reserved.    
 */
+
+
+/** Uncomment one of the next two lines to select the Photon antenna to use **/
+//  STARTUP(WiFi.selectAntenna(ANT_INTERNAL));  // uncomment to use the Photon's internal patch antenna
+//  STARTUP(WiFi.selectAntenna(ANT_EXTERNAL));  // uncomment to use an external WiFi antenna on the Photon
 
 // Photon I/O pin definitions; compatible with the Wireless I/O Board
 const int TRIGGER_PIN = D1; // ultrasonic sensor trigger
@@ -30,6 +35,8 @@ void setup() {
     pinMode(ECHO_PIN, INPUT);
     pinMode(ACTIVATE, OUTPUT);
     pinMode(LED_PIN, OUTPUT);
+    
+    digitalWrite(ACTIVATE, LOW);    // make sure that garage door activation is off
     
     Particle.variable("door_distance", distMeasurement);    // cloud variable containing the door distance in inches
     Particle.variable("Door_Is_Open", doorIsOpen);          // cloud variable containing the open/closed decision
