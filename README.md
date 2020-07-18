@@ -7,20 +7,20 @@ of the garage door -- open or closed.  The project uses our Wireless I/O Board f
 https://github.com/TeamPracticalProjects/Wireless_IO_Board
 
 Garage door control and status is accessible over the Internet so that the door can be 
-controlled from anywhere that the smartphone has Internet access.  No modifiactions are 
+controlled from anywhere that the smartphone has Internet access.  No modifications are 
 made to the garage door opener mechanism itself.
 
 ## Garage Door Activation.
 Activation (opening and closing) of the garage door is via one of the original system's remote
 door controls.  The normally open relay contacts on the Wireless I/O board are wired across
 the pushbutton on the original door controller to activate the garage door opener as if
-the button on the remote was pressed.  The Wireless I/O Board as an on-board 3.3 volt power 
+the button on the remote was manually pressed.  The Wireless I/O Board has an on-board 3.3 volt power 
 regulator that can be used to replace the battery on the garage door opener.
 
 ## Garage Door Status.
 The status of the garage door (open or closed) is determined by an ultrasonic distance sensor
-that is mounted so as to read out the distance to where the garage door opens.  The sensor location
-is closen whre the distace to a closed garage door is significantly different from the distance to
+that is mounted to read out the distance to where the garage door opens.  The sensor location
+is closen where the distance to a closed garage door is significantly different from the distance to
 an open garage door (e.g. in the rafters above the door track).
 
 ## Cautions.
