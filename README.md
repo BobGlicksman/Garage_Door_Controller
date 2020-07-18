@@ -20,7 +20,7 @@ regulator that can be used to replace the battery on the garage door opener.
 ## Garage Door Status.
 The status of the garage door (open or closed) is determined by an ultrasonic distance sensor
 that is mounted to read out the distance to where the garage door opens.  The sensor location
-is closen where the distance to a closed garage door is significantly different from the distance to
+is chosen where the distance to a closed garage door is significantly different from the distance to
 an open garage door (e.g. in the rafters above the door track).
 
 ## Cautions.
